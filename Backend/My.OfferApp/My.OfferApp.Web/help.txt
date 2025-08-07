@@ -1,0 +1,5 @@
+dotnet ef migrations add -s My.OfferApp.Web -p My.OfferApp.Dal -c ApplicationDbContext -o Migrations/Application InitialCreate
+
+dotnet ef database update -p My.OfferApp.Web -c ApplicationDbContext
+
+dotnet ef migrations remove -s My.OfferApp.Web -p My.OfferApp.Dal -c ApplicationDbContext
